@@ -12,5 +12,5 @@ class Arithmetic(models.Model):
     operation_type = models.CharField(
         max_length=50, choices=[(tag.name, tag.value) for tag in OperationType]
         )
-    x = models.IntegerField(null=True)
-    y = models.IntegerField(null=True)
+    x = models.IntegerField()
+    y = models.IntegerField()

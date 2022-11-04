@@ -5,7 +5,7 @@ from rest_framework.decorators import api_view
 
 
 
-@api_view(['POST', 'GET'])
+@api_view(['POST'])
 def arithmetic_operation(request):
     serializer = ArithmeticSerializer(data=request.data)
     serializer.is_valid(raise_exception=True)

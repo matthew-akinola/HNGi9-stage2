@@ -4,7 +4,7 @@ from .models import Arithmetic
 class ArithmeticSerializer(serializers.ModelSerializer):
     class Meta:
         model = Arithmetic
-        fields = "__all__"
+        fields = ['operation_type', 'x', 'y']
 
 
 
