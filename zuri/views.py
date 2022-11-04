@@ -5,7 +5,7 @@ from rest_framework.decorators import api_view
 
 
 
-@api_view(['POST'])
+@api_view(['POST', 'GET'])
 def arithmetic_operation(request):
     serializer = ArithmeticSerializer(data=request.data)
     serializer.is_valid(raise_exception=True)
@@ -20,7 +20,7 @@ def arithmetic_operation(request):
         result = x * y
     context = {
         "slackUsername": "Tech-matt",
-        "operation": operation_type,
+        "operation_type": operation_type,
         "result": result
     }
     return Response(context, status=status.HTTP_200_OK)
