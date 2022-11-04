@@ -1,1 +1,1 @@
-web: gunicorn zuri.wsgi
+web: gunicorn stage2.wsgi
