@@ -21,7 +21,7 @@ def arithmetic_operation(request):
     """
 
 
-    KEYWORDS = ['add','subtract','multiply','addition','subtraction','multiplication', 'product']
+    KEYWORDS = ['add','subtract','multiply','addition', 'sum','subtraction','multiplication', 'product']
     # check the operation type length first becuase it will throw an error if a long string is passed 
     # which won't correspond with the Enum and django choices that was used in the serializer and model
     data_type = request.data['operation_type']
