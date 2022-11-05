@@ -29,7 +29,7 @@ DEBUG = True
 CORS_ALLOW_ALL_ORIGINS = True 
 CORS_ALLOW_CREDENTIALS = True
 
-ALLOWED_HOSTS = ['stagei9.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
