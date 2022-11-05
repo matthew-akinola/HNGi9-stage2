@@ -51,13 +51,11 @@ def arithmetic_operation(request):
             
         operation_type = request.data['operation_type']
         operation_type_list = operation_type.split()
-        print(operation_type_list)
         x = int(request.data['x'])
         y = int(request.data['y'])
         # assign the calue of item from the loop to match variable and check
         #  if there's any value like that in the keywords list
         if any((match := item)  in operation_type_list for item in KEYWORDS):
-            print(match)
             operation = match  
             # cleaned = [ x for x in operation_type_list if x.isdigit() ]
             if operation ==  'add' or operation ==  'addition':
